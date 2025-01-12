@@ -1,0 +1,1 @@
+This repository demonstrates two common CSS bugs: unexpected behavior of `calc()` when mixing percentages and pixels, and specificity conflicts that override intended styling. The `bug.css` file contains the problematic code, while `bugSolution.css` provides the corrected version.
