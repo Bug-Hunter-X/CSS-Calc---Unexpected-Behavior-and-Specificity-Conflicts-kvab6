@@ -1,0 +1,23 @@
+/* bugSolution.css */
+
+/* Addressing calc() issues: Ensure consistent unit usage or use alternative approaches to avoid unexpected behavior. */
+.container {
+  width: 50%;
+  margin-left: 10px;
+  /* Or use a more robust calculation or avoid calc altogether depending on your needs. */
+}
+
+/* Addressing specificity issues: Avoid unnecessary inline styles. Use more specific selectors and the order of rules in the CSS file to resolve specificity conflicts. */
+#importantElement {
+  font-size: 16px;
+}
+
+.importantElement {
+  /*This class will be ignored because of the ID selector above */
+  font-size: 18px;
+}
+
+/*Another way to handle the specificity is to use !important, however, this should be avoided*/
+.anotherImportantElement {
+  font-size: 14px !important;
+}
